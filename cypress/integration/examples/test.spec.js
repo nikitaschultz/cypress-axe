@@ -1,7 +1,4 @@
 /// <reference types="cypress" />
-
-
-
 context('Actions', () => {
 
   function terminalLog(violations) {
@@ -32,6 +29,6 @@ context('Actions', () => {
 
     cy.injectAxe();
 
-    cy.checkA11y();
+    cy.checkA11y(null, null, terminalLog);
   })
 })
